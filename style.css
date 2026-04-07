@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #89c2d9, #5fa8d3);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 130px);
+  gap: 12px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+
+
+.cell {
+  width: 130px;
+  height: 130px;
+  background: #f8f9fa;
+  border: none;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cell:hover {
+  background: #e9f5ff;
+  transform: scale(1.05);
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+#new-game {
+  margin-top: 15px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #2c7da0;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#new-game:hover {
+  background: #eaf6fb;
+  transform: translateY(-2px);
+}
+
+
+:root {
+  --font-display: "Playfair Display", Georgia, serif;
+}
